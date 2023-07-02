@@ -2,27 +2,29 @@
 
 # Welcome to our Python playground!
 
-# What is a String:
-"""
-A str data type represents a sequence of characters in Python. They start with
-quotations: ("") , (''), (\"""), or (\''')
+# WHAT IS A STRING?
+
+A string *(str)* is a data type represents a sequence of characters in Python. They start with
+quotations: ("") , (''), ("""), or (''')
 
 The following are examples of valid strings: 
 "hello" || "2.0" || 'str' || \"""False\""" || \'''true\'''
-"""
 
-"""
-The New Line Character \n is an invisible character that tells the computer
-to move the cursor to the next line in the console.
-Invisible meaning, the computer ignores it besides it function to move the cursor to the next line.
-For example:
+# ESCAPE CHARACTERS
+**The New Line Character**: <sub>\n</sub> is an invisible character that tells the computer to move the cursor to the next line in the console.
+
+*<sub>Invisible meaning, the computer ignores it besides it function to move the cursor to the next line.</sub>*
+
+For Example:
+```
 print("hello\nworld\n!")
     returns: hello
              world
              !
+```
 
 OTHER ESCAPE CHARACTER!
-"""
+
 
 # String Methods
 name = "Tim"
