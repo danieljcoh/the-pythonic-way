@@ -1,16 +1,20 @@
 # The Pythonic Way
 
-# Welcome to our Python playground!
 
-# WHAT IS A STRING?
+***
+
+
+# STRINGS
+
+### What is a string?
 
 A string *(str)* is a data type represents a sequence of characters in Python. They start with
 quotations: ("") , (''), ("""), or (''')
 
 The following are examples of valid strings: 
-"hello" || "2.0" || 'str' || \"""False\""" || \'''true\'''
+"hello" || "2.0" || 'str' || \"""False\""" || \'''true\''' || "Wow the moon is so bright tonight!"
 
-# ESCAPE CHARACTERS
+### Escape Characters
 **The New Line Character**: <sub>\n</sub> is an invisible character that tells the computer to move the cursor to the next line in the console.
 
 *<sub>Invisible meaning, the computer ignores it besides it function to move the cursor to the next line.</sub>*
@@ -18,6 +22,7 @@ The following are examples of valid strings:
 For Example:
 ```
 print("hello\nworld\n!")
+
     returns: hello
              world
              !
@@ -26,17 +31,33 @@ print("hello\nworld\n!")
 OTHER ESCAPE CHARACTER!
 
 
-# String Methods
-name = "Tim"
-print(name.upper())
-print(name.lower())
-print(name.capitalize())
-print(name.title())
+### String Methods
 
+```
+name = "Kam"
+print(name.upper())      # KAM
+print(name.lower())      # kam
+print(name.capitalize()) # Kam
+print(name.title())      # Kam
 
-.split() # separates your string into an array using a **delimiter** to separate the words
-# a delimiter is the character that tells you how to separate the string, (",") , ("."), (" ")
-# when you put nothing, it defaults to spaces. (" ")
+# The difference between .capitalize() and .title() methods in Python is that they are both used to capitalize strings, but they do so in different ways.
+# The title() method capitalizes the first letter of every word in the string.
+# The capitalize() method only capitalizes the first letter of the first word in the string.
+
+str = "The moon is beautiful tonight!"
+print(str.capitalize())  # The moon is beautiful tonight!
+print(str.title())       # The Moon Is Beautiful Tonight!
+```
+
+### .split()
+.split() separates your string into an array using a **delimiter** to separate the words
+<sub>A delimiter is the character that tells you how to separate the string, (",") , ("."), (" ")</sub>
+<sub>when you put nothing, it defaults to spaces. (" ")</sub>
+
+```
+.split() example:
+
+```
 
 .replace() # replace all of the characters in a current string with whatever string you specify
 # Then it will return a new string with all of the replaced characters.
