@@ -148,3 +148,106 @@ if name in greeting:
     print("The name is contained in the greeting!")
 
 print(f"The first character of the name is {name[0]}")
+
+
+# Tuples
+
+### What is a tuple?
+Pronounced Tuple *(Cup-il)*
+
+A tuple is a collection data type that stores a collection of elements like a list.
+- A tuple is any element inside of a parentheses.
+- Tuples are Immutable
+```
+t = (1,2,3,4)
+t[2] = 10    # raises an exception because tuples cannot be changed.
+t.append(10) # also raises an exception because tuples are immutable.
+```
+
+- All items are accessible using indices
+```
+t = (1,2,3,4)
+print(t[0]) # prints 1
+print([-1]) # prints 4
+```
+
+- Valid Tuple Examples:
+t1 = (4, 4, 5, (3,2), True, [])
+- Nested Tuples is possible
+
+
+- Combining Tuples
+t1 = (1, 2)
+t2 = (3, 4)
+combined = t1 + t2  # prints(1, 2, 3, 4)
+
+
+- Multiplying Tuples
+t1 = (1, 2)
+multiplied = t1 * 2
+print(multiplied)   # prints (1, 2, 1, 2)
+
+
+- Creating Tuples
+x = 1, 2, 3, 4 # A valid tuple by default
+print(x)  # returns (1, 2, 3, 4)
+- You don't actually need the parentheses when you define tuples.
+
+- One Element Tuples
+t1 = (1)
+This won't work. It will just be an int.
+If you want to make a one item tuple, you need to do this...
+t1 = (1, )
+
+- Changing a Tuple. | You can't change a Tuple but you can make a new one.
+t1 = (1, 2, 3)
+t2 = (t1[0], 4, t1[2])
+
+
+
+### Tuple Methods
+
+Tuple()
+```
+tuple() ???
+```
+
+len()
+count()
+.index()
+
+
+### Immutable
+- Tuple
+- String
+- Int
+- Float
+- Bool
+
+### Mutable
+- List
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
