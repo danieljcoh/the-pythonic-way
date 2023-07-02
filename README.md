@@ -50,7 +50,8 @@ print(str.title())       # The Moon Is Beautiful Tonight!
 ```
 
 ### .split()
-.split() separates your string into an array using a **delimiter** to separate the words
+.split() separates your string into an array using a **delimiter** to separate the words.
+
 <sub>A delimiter is the character that tells you how to separate the string, (",") , ("."), (" ")</sub>
 <sub>when you put nothing, it defaults to spaces. (" ")</sub>
 
