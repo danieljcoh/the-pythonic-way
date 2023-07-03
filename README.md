@@ -29,6 +29,21 @@ print("hello\nworld\n!")
 ```
 
 OTHER ESCAPE CHARACTER!
+Escape Character	Function
+\\	Backslash (used to escape itself or other characters)
+\'	Single quote (used to represent a single quote)
+\"	Double quote (used to represent a double quote)
+\n	Newline (used to start a new line)
+\t	Tab (used to insert a tab)
+\r	Carriage return (used to return to the beginning of the line)
+\b	Backspace (used to move the cursor one position backward)
+\f	Form feed (used to advance the printer to the next page)
+\v	Vertical tab (used to create vertical spacing)
+\ooo	Octal value (where 'ooo' is a 3-digit octal value)
+\xhh	Hexadecimal value (where 'hh' is a 2-digit hexadecimal value)
+\uhhhh	Unicode escape (where 'hhhh' is a 4-digit hexadecimal value representing a Unicode character)
+\Uhhhhhhhh	Unicode escape (where 'hhhhhhhh' is an 8-digit hexadecimal value representing a Unicode character)
+You can use these escape characters in Python strings to represent special characters or characters that cannot be directly included in the string. For example, "\n" represents a newline character, and "\t" represents a tab character.
 
 
 ### String Methods
