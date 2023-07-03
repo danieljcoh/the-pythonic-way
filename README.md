@@ -63,7 +63,6 @@ maxsplit:	        (Optional.) Specifies how many splits to do. Default value is 
 <sub>When maxsplit is specified, the list will contain the specified number of elements plus one.</sub>
 
 ```
-                                        **********
 sentence = "The International Space Station is in dire need!"
 
 lst = sentence.split()
@@ -71,16 +70,16 @@ print(lst) # ["The", "International", "Space", "Station", "is", "in", "dire", "n
 
 # by default, since no second, optional, parameter was added, it defaulted to the delimiter of a " " (space)
 
-
-                                        **********
+                                        ----------
+                                        
 sentence = "Hello, this is captain Berk of the ISS, we have a grave status report."
 lst = sentence.split(", ")
 print(lst) # ["Hello", "this is captain Berk of the ISS", "we have a grave status report."]
 
 # in this example the original sentence is broken into an array based on the separator parameter we specified above. In this case: (", ")
 
-
-                                        **********
+                                        ----------
+                                        
 sentence = "Moments after the ISS emergency broadcast. Looking up, you can see that the moon has been shattered and is now falling towards the Earth. Tweet #alieninvasion, #resistthem, or #moonshattering to spread awareness."
 lst = sentence.split("#", 1)
 print(lst) # ['Moments after the ISS emergency broadcast. Looking up, you can see that the moon has been shattered and is now falling towards the Earth. Tweet ', 'alieninvasion, #resistthem, or #moonshattering to spread awareness.']
@@ -89,18 +88,33 @@ print(lst) # ['Moments after the ISS emergency broadcast. Looking up, you can se
 ```
 
 ### .replace()
+.replace() method replaces a specified phrase with another specified phrase.
+- It replaces all of the characters in a current string with whatever string you specify.
+- Then it will return a NEW string with all of the replaced characters.
+(string.replace(oldvalue, newvalue, count))
 
-.replace() # replace all of the characters in a current string with whatever string you specify
-# Then it will return a new string with all of the replaced characters.
+
+**.split() Parameter Values**
+old value:	        (Required.) The string to search for
+new value:	        (Required.) The string to replace the old value with
+count:	            (Optional.) A number specifying how many occurrences of the old value you want to replace. Default is all occurrences
+<sub>All occurrences of the specified phrase will be replaced, if nothing else is specified.</sub>
+
+```
 s = "A,B,C,D"
 s2 = s.replace("," , "|") # will return "A|B|C|D"
 # s.replace() doesn't change the original variable. Instead it creates a new variable. So you might have trouble when using .replace() without assigning the returned value to a new variable.
+```
 
+
+```
 .join() # used to build a new string from an iterable item (set, dictionary, list)
 lst = ["d","a", "n"]
 lst_string = "".join(lst) #takes all the items in the iterable together into the variable.
 lst.string = "-".join(lst) # returns "d-a-n"
 lst.string = "|".join(lst) # returns "d|a|n"
+```
+
 
 # F-Strings
 # to help with the cumbersome nature of concatenation
