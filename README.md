@@ -33,6 +33,7 @@ OTHER ESCAPE CHARACTER!
 
 ### String Methods
 
+### upper() lower() title() capitalize()
 ```
 name = "Kam"
 print(name.upper())      # KAM
@@ -57,6 +58,11 @@ print(str.title())       # The Moon Is Beautiful Tonight!
 
 ```
 .split() example:
+
+sentence = "The International Space Station is in dire need!"
+
+lst = split(sentence) # prints: lst = ["The", "International", "Space", "Station", "is", "in", "dire", "need!"]
+# by default, since no second, optional, parameter was added, it defaulted to the delimiter of a " " (space)
 
 ```
 
