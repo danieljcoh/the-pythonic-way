@@ -50,11 +50,12 @@ print(str.capitalize())  # The moon is beautiful tonight!
 print(str.title())       # The Moon Is Beautiful Tonight!
 ```
 
+
 ### .split()
 .split() separates your string into an array using a **delimiter** to separate the words.
 
-<sub>A delimiter is the character that tells you how to separate the string, (",") , ("."), (" ")</sub>
-<sub>when you put nothing, it defaults to spaces. (" ")</sub>
+    <sub> - A delimiter is the character that tells you how to separate the string, (",") , ("."), (" ")</sub>
+    <sub> - when you put nothing, it defaults to spaces. (" ")</sub>
 
 **.split() Parameter Values**
 separator:	        (Optional.) Specifies the separator to use when splitting the string. By default any whitespace is a separator
@@ -62,6 +63,7 @@ maxsplit:	        (Optional.) Specifies how many splits to do. Default value is 
 <sub>When maxsplit is specified, the list will contain the specified number of elements plus one.</sub>
 
 ```
+                                        **********
 sentence = "The International Space Station is in dire need!"
 
 lst = sentence.split()
@@ -69,20 +71,24 @@ print(lst) # ["The", "International", "Space", "Station", "is", "in", "dire", "n
 
 # by default, since no second, optional, parameter was added, it defaulted to the delimiter of a " " (space)
 
-***
+
+                                        **********
 sentence = "Hello, this is captain Berk of the ISS, we have a grave status report."
 lst = sentence.split(", ")
 print(lst) # ["Hello", "this is captain Berk of the ISS", "we have a grave status report."]
 
 # in this example the original sentence is broken into an array based on the separator parameter we specified above. In this case: (", ")
 
-***
+
+                                        **********
 sentence = "Moments after the ISS emergency broadcast. Looking up, you can see that the moon has been shattered and is now falling towards the Earth. Tweet #alieninvasion, #resistthem, or #moonshattering to spread awareness."
 lst = sentence.split("#", 1)
 print(lst) # ['Moments after the ISS emergency broadcast. Looking up, you can see that the moon has been shattered and is now falling towards the Earth. Tweet ', 'alieninvasion, #resistthem, or #moonshattering to spread awareness.']
 
 # in this final example, the original sentence will be split by the (#) marking, but it will only be split by the second parameter, maxsplit, times. Which in this case is 1 time.
 ```
+
+### .replace()
 
 .replace() # replace all of the characters in a current string with whatever string you specify
 # Then it will return a new string with all of the replaced characters.
