@@ -28,9 +28,13 @@ print("hello\nworld\n!")
              !
 ```
 
-OTHER ESCAPE CHARACTER!
-Escape Character	Function
-\\	Backslash (used to escape itself or other characters)
+**Backslash** (\\)
+Backslash: used to escape itself or other characters
+```
+Example of \\ escape character
+```
+
+
 \'	Single quote (used to represent a single quote)
 \"	Double quote (used to represent a double quote)
 \n	Newline (used to start a new line)
