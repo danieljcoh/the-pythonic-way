@@ -28,14 +28,19 @@ print("hello\nworld\n!")
              !
 ```
 
-**Backslash** (\\)
+**Backslash** ( \\ )
 Backslash: used to escape itself or other characters
 ```
 Example of \\ escape character
 ```
 
+**Single Quotes** ( \' )
+Single Quotes: used to represent a single quotes.
+```
+Example of \' escape character
+```
 
-\'	Single quote (used to represent a single quote)
+
 \"	Double quote (used to represent a double quote)
 \n	Newline (used to start a new line)
 \t	Tab (used to insert a tab)
