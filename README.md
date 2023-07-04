@@ -40,21 +40,33 @@ Single Quotes: used to represent a single quotes.
 Example of \' escape character
 ```
 
-*Double Quotes** ( \" )
+**Double Quotes** ( \" )
 Double quote (used to represent a double quote)
 ```
 pass
 ```
 
+**Tab** ( \t )
+Tab: used as a tab in a string
+```
+Pass
+```
 
-\n	Newline (used to start a new line)
-\t	Tab (used to insert a tab)
-\r	Carriage return (used to return to the beginning of the line)
-\b	Backspace (used to move the cursor one position backward)
+**Carriage Return** ( \r	)
+Carriage return: (used to return to the beginning of the line)
+```
+pass
+```
+
+**Backspace** ( \b	)
+Backspace: (used to move the cursor one position backward)
+```
+pass
+```
 
 You can use these escape characters in Python strings to represent special characters or characters that cannot be directly included in the string. For example, "\n" represents a newline character, and "\t" represents a tab character.
 
-There are several other escape types such as:
+There are several other escape characters such as:
 - \f
 - \v
 - \ooo
