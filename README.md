@@ -317,7 +317,10 @@ count()
 - List
 
 
-
+### CS Resources
+https://github.com/mtdvio/every-programmer-should-know
+https://github.com/kdeldycke/awesome-falsehood
+https://roadmap.sh/computer-science
 
 
 
