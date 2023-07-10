@@ -298,6 +298,12 @@ t2 = (t1[0], 4, t1[2])
 
 A list is a Data Structure. A data structure that stores a collection of data in sequential order.
 
+Lists can contain almost any other data type. Numbers. Strings. Booleans. Even other lists.
+
+EXAMPLES OF LISTS:
+- [True, True [False, False]]
+- [1, 2, 3, 4, 5.0, 43.2, "Help!"]
+
 Lists are 0 - indexed. What does this mean?
 - Let's say we have a List called "planets_on_route_to_our_destination"
 
@@ -355,6 +361,37 @@ friends[-4] = "Chip"
 
 ```
 
+TWO DIMENSIONAL LISTS:
+
+We will often find that a two-dimensional list is a very good structure for representing grids such as games like tic-tac-toe.
+
+#A 2d list with three lists in each of the indices. 
+tic_tac_toe =   [
+                    ["X","O","X"], 
+                    ["O","X","O"], 
+                    ["O","O","X"]
+                ]
+
+ADD TO A TWO-DIMENSIONAL LIST
+
+heights = [["Jenny", 61], ["Alexus", 70], ["Sam", 67], ["Grace", 64]]
+
+heights += [["Vik", 68]]
+
+ages = [["Aaron", 15], ["Dhruti", 16]]
+
+dhruti_age = ages[1][1] 
+print(dhruti_age) # 16
+
+
+
+### List Methods:
+
+- append()
+          Adds an item to end of the list.
+- remove()
+          The .remove() method removes an item from a list by passing in the value of the item to be removed as an argument.
+
 ### Tuple Methods
 
 Tuple()
@@ -392,6 +429,7 @@ https://roadmap.sh/computer-science
 ERRORS:
 Traceback : means the program stopped. Something went wrong.
 IndexError: list index out of range: YOU are trying to access an index within a list that doesn't exist.
+ValueError: list.remove(x): x not in list
 
 
 
