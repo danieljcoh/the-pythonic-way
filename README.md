@@ -292,6 +292,48 @@ t1 = (1, )
 t1 = (1, 2, 3)
 t2 = (t1[0], 4, t1[2])
 
+# LISTS
+
+### What is a list?
+
+A list is a Data Structure. A data structure that stores a collection of data in sequential order.
+
+Lists are 0 - indexed. What does this mean?
+- Let's say we have a List called "planets_on_route_to_our_destination"
+
+planets_on_route_to_our_destination["Jupiter", "Planet X", "hu123bfo", "Cool Planet 77"]
+
+| Planet    | Index |
+| -------- | ------- |
+| Jupiter  | 0   |
+| Planet X | 1     |
+| hu123bfo    | 2   |
+| Cool Planet 77    | 3   |
+
+
+lst = [1,2,3,4,5]
+print(lst[4/2]) # will return print(lst[2])
+
+
+NEGATIVE INDEXING
+
+
+
+- You can use + on lists
+
+YES: list_one += list_two
+NO: list_one = [5,4,7]
+    list_one += 6
+    - If we want to add a single element to a list, we need to do something like this: 
+        lst = [1,2,3,4]
+        lst += [5]
+        # lst will be: [1,2,3,4,5]
+
+YES:
+    in_my_garden = ["tomatoes", "strawberries", "carrots", "potatoes"]
+    new_in_my_garden = in_my_garden + ["apples", "lemons", "garlic", "corn"]
+    # will become: ["tomatoes", "strawberries", "carrots", "potatoes", "apples", "lemons", "garlic", "corn"]
+
 
 
 ### Tuple Methods
@@ -328,7 +370,9 @@ https://roadmap.sh/computer-science
 
 
 
-
+ERRORS:
+Traceback : means the program stopped. Something went wrong.
+IndexError: list index out of range: YOU are trying to access an index within a list that doesn't exist.
 
 
 
