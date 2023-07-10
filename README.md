@@ -316,6 +316,12 @@ print(lst[4/2]) # will return print(lst[2])
 
 
 NEGATIVE INDEXING
+| Planet    | Index |
+| -------- | ------- |
+| Jupiter  | -4   |
+| Planet X | -3     |
+| hu123bfo    | -2   |
+| Cool Planet 77    | -1   |
 
 
 
