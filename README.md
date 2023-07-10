@@ -391,6 +391,17 @@ print(dhruti_age) # 16
           Adds an item to end of the list.
 - remove()
           The .remove() method removes an item from a list by passing in the value of the item to be removed as an argument.
+```
+customer_data = [["Ainsley", "Small", True], ["Ben", "Large", False], ["Chani", "Medium", True], ["Depak", "Medium", False]]
+
+print(customer_data)
+
+customer_data[2][-1] = False
+
+customer_data[1].remove(False)
+#[["Ainsley", "Small", True], ["Ben", "Large"], ["Chani", "Medium", True], ["Depak", "Medium", False]]
+```
+  
 
 ### Tuple Methods
 
