@@ -341,6 +341,19 @@ YES:
     # will become: ["tomatoes", "strawberries", "carrots", "potatoes", "apples", "lemons", "garlic", "corn"]
 
 
+RE-ASSIGNING INDEXES
+```
+friends = ["Tom", "Matt", Erin", "Danny", "Kurt"]
+friends[0] = "Juan"
+# this will change "Tom" -> "Juan"
+# ["Juan", "Matt", Erin", "Danny", "Kurt"]
+
+we can also do this with negative indexes
+friends[-4] = "Chip"
+# this will change "Matt" -> "Chip"
+# ["Juan", "Chip", Erin", "Danny", "Kurt"]
+
+```
 
 ### Tuple Methods
 
