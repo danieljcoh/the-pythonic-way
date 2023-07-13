@@ -457,6 +457,12 @@ for num in lst:
         continue # skips the current iteration but continues the loop
     print(num)
 
+pass keyword: doesn't do anything. It's a placeholder we can put somewhere that we don't know what to code yet.
+if i == 0:
+    pass
+else:
+    print("something")
+
 
 nested for loops
 for i in range(10):
@@ -562,9 +568,37 @@ for i in range(len(lst)):
     for j in range(len(interior_lst)):
         print(interiot_lst[j])
     
+st = "hello world"
+for i, char in enumerate(st):
+    if char == "w":
+        print(i)
+        # 6
 
-            
+what is this enumerate thing? 
+
+Ask for a number a specific amount of times
+
+nums = []
+for i in range(5):
+    num = input("Enter a number: ")
+    nums.append(int(num)) // we need int() because input() always yields a string.
     
+.find()? 
+
+**FOR ELSE**:
+
+
+words = ("hello", "name", "this")
+target = "name"
+
+for word in words:
+    if word == target:
+        print("I found the word!")
+else:
+    print("I didn't find the word")
+
+If we loop through the entire words looking for target and it's not found. The else statement will run.
+The entire for loop will run first and then the else statement will run if the for loop doesn't execute it's intended effect.
 
     
 
