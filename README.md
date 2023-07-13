@@ -559,6 +559,31 @@ for i in range(10):
             3 9 1
             4 0 0
 
+### Exmaple of nested for loops
+```
+# Use nested for loops to iterate through the provided list, which contains other lists, and print the respective
+# sums of the inner lists, each on a separate line.
+
+lst = [[2, 3, 4], [-2, -4, 0], [1, 2], [1, 1, 1, 5, 6], [0, 9, 8, 7]]
+
+# Write your code here.
+for i in range(len(lst)):
+    interior_lst = lst[i]
+    sum = 0
+    for j in range(len(interior_lst)):
+        sum += interior_lst[j]
+    print(sum)
+
+
+"""
+OUTPUT: 
+9
+-6
+3
+14
+24
+"""
+```
 
 The below example will 
 lst = [[1,2], [3,4], [5,6], [7,8]]
