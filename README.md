@@ -404,8 +404,6 @@ customer_data[1].remove(False)
 
 
 # For Loops
-# Welcome to our Python playground!
-
 names = ["Dan", "Paul", "Andrew"]
 for name in names:
     print(f"Name in list: {name}")
@@ -625,7 +623,57 @@ else:
 If we loop through the entire words looking for target and it's not found. The else statement will run.
 The entire for loop will run first and then the else statement will run if the for loop doesn't execute it's intended effect.
 
+
+
+# While Loops
+a = 1
+while a != 42:
+    print("a is still not 42")
+    a += 1
+
+# Anything you can do with a for loop, you can do with a while loop
+# The difference in use case comes from "Not knowing how much you have to loop."
+
+# text adventure example:
+num = input("Enter an integer: ")
+while not num.isdigit():
+    num = input("Enter an integer: ")
+
+# We need to be careful of infinite loops
+while True:
+    num = input("Enter an integer: ")
+
+# more correct version of code: 
+while True:
+    num = input("Enter an integer: ")    
+    if num.isdigit():
+        break # will immediately break out of current loop.
+
+lst = [2,3,3,-2,-2,-1]
+
+result = 0
+i = 0 # we need to keep track of and compare to the list indices
+
+while result < 9 and i < len(lst):
+    num = lst[i]
+    result += num
+    i += 1 # to make sure it does not make an infinite loop.
+
+    print(num)
+
+
+# while else
+lst = [1,2,3,3,45,5]
+i = 0
+while i < len(lst):
+    if lst[i] == -2:
+        print("found it")
+        break
+    i += 1 # make sure no infinite loop happens.
+else:
+    print("didn't find it.")
     
+ 
 
 
 ### Tuple Methods
