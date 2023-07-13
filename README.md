@@ -401,7 +401,173 @@ customer_data[2][-1] = False
 customer_data[1].remove(False)
 #[["Ainsley", "Small", True], ["Ben", "Large"], ["Chani", "Medium", True], ["Depak", "Medium", False]]
 ```
-  
+
+
+# For Loops
+# Welcome to our Python playground!
+
+names = ["Dan", "Paul", "Andrew"]
+for name in names:
+    print(f"Name in list: {name}")
+
+
+for i in range(1, 10, 2):
+    print(f"i = {i}")
+
+
+
+range()
+len(lst) is better
+if an object is an ITERABLE object we can:
+iterable = "hello" | ["h", "e", "l", "l", "o"] | etc...
+for element in iterable:
+    print(element)
+
+for i, element in enumerate(lst):
+#has access to the index of the element and the element itself.
+
+ITERATE THROUGH TUPLES
+tup = (1,2,3,4, "hello", "tim", True)
+for i in range (len(tup)):
+    element = tup[i]
+    print(element)
+
+for i, element in enumerate(tup):
+    print(i, element)
+
+for element in tup:
+    print(element)
+
+STRINGS
+s = "my string"
+
+for i in range(len(s)):
+    print(s[i])
+
+for i in range(0, len(s), 2)
+prints every other char
+
+for num in lst:
+    if num == 4:
+        break # stops the for loop
+    print(num)
+
+for num in lst:
+    if num == 4:
+        continue # skips the current iteration but continues the loop
+    print(num)
+
+
+nested for loops
+for i in range(10):
+    for j in range(10):
+        print(j)
+
+        j will run each iteration of i 
+        so j will run 10 times for each one iteration of i
+
+for i in range(10):
+    for j in range(10):
+        for w in range(2):
+            print(i,j,w)
+            prints: 
+            0 0 0
+            0 0 1
+            0 1 0
+            0 1 1
+            0 2 0
+            0 2 1
+            0 3 0
+            0 3 1
+            0 4 0
+            0 4 1
+            0 5 0
+            0 5 1
+            0 6 0
+            0 6 1
+            0 7 0
+            0 7 1
+            0 8 0
+            0 8 1
+            0 9 0
+            0 9 1
+            1 0 0
+            1 0 1
+            1 1 0
+            1 1 1
+            1 2 0
+            1 2 1
+            1 3 0
+            1 3 1
+            1 4 0
+            1 4 1
+            1 5 0
+            1 5 1
+            1 6 0
+            1 6 1
+            1 7 0
+            1 7 1
+            1 8 0
+            1 8 1
+            1 9 0
+            1 9 1
+            2 0 0
+            2 0 1
+            2 1 0
+            2 1 1
+            2 2 0
+            2 2 1
+            2 3 0
+            2 3 1
+            2 4 0
+            2 4 1
+            2 5 0
+            2 5 1
+            2 6 0
+            2 6 1
+            2 7 0
+            2 7 1
+            2 8 0
+            2 8 1
+            2 9 0
+            2 9 1
+            3 0 0
+            3 0 1
+            3 1 0
+            3 1 1
+            3 2 0
+            3 2 1
+            3 3 0
+            3 3 1
+            3 4 0
+            3 4 1
+            3 5 0
+            3 5 1
+            3 6 0
+            3 6 1
+            3 7 0
+            3 7 1
+            3 8 0
+            3 8 1
+            3 9 0
+            3 9 1
+            4 0 0
+
+
+The below example will 
+lst = [[1,2], [3,4], [5,6], [7,8]]
+
+for i in range(len(lst)):
+    interior_list = lst[i]
+    for j in range(len(interior_lst)):
+        print(interiot_lst[j])
+    
+
+            
+    
+
+    
+
 
 ### Tuple Methods
 
