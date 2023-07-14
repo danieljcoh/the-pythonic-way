@@ -161,10 +161,38 @@ lst.string = "|".join(lst) # returns "d|a|n"
 ```
 
 
-# F-Strings
-# to help with the cumbersome nature of concatenation
-# {can but any equation in here or variable name if it exists}
-# You are a human on Earth who is receiving intel from Potsu about the aliens.
+### F-Strings
+
+Purpose: to help with the cumbersome nature of concatenation.
+Concatenation is usually like: 
+```
+name = "Dr. Potsu"
+mission = "To deliver human embyros in-vitro to the seven standing human planetary civilizations making sure all goes smoothly."
+date = xx/xx/xxxx
+concat = "Hey control. This is " + name + "and my objective is " + mission + "by " + date + ". Out."
+f_string = f"Hey control. This is {name} and my objective is {mission} by {date}. Out."
+```
+As you can see above, concatenating is a little difficult and complicated to type and I find it more time consuming.
+Luckily, Python and many other languages have a way around this:
+*f-strings*
+F-strings can be utilized like: 
+```
+name = "Dr. Potsu"
+mission = "To deliver human embyros in-vitro to the seven standing human planetary civilizations making sure all goes smoothly."
+date = xx/xx/xxxx
+f_string = f"Hey control. This is {name} and my objective is {mission} by {date}. Out."
+```
+I think you can decided for yourself which one is a little faster or more effecient for your work flow.
+
+# F-Strings: It's important to note
+- The {} that we use to input variables. There are many other things we can put in there.
+```
+about_me = "hi! my name is Potsu and I am {50 - 20} years old.
+# will return: "hi! my name is Potsu and I am 30 years old.
+```
+Essentially: anything inside the {} will be computed as normal and added as part of the string.
+
+**You are a human on Earth who is receiving intel from Potsu about the aliens.**
 
 # String multiplication
 # multiple strings
