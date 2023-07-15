@@ -3,6 +3,57 @@
 
 ***
 
+# SLICES
+
+### What is a slice?
+A slice is an operator we can use on a collection data type:
+- String
+- List
+- Tuple
+
+It'll create a new tuple, list, or string as the sliced version.
+
+slice = [start : stop : step]
+```
+lst = [1,2,3,4,5]
+new_lst = lst[0:2] 
+return new_list  # [1,2]
+```
+- Starting (inclusively) at the first indexed number.
+- Ending (exclusively) at the second indexed number.
+- Slicing up or down the collection based on the step.
+
+The only parameter that is actually required is the "stop" parameter.
+If the first and last parameters are empty, it will default: lst[0 : STOP : 1]
+    - To start at the first index and only step up by 1. 
+```
+lst = [1,2,3,4,5]
+new_lst = lst[:]  # This will simply return the list.
+return new_list  # [1,2,3,4,5]
+```
+
+- Just including a start value (input an example here)
+
+- [::2]
+
+  
+You can slice positively, and negatively. 
+
+***
+
+# NEGATIVE NUMBERS IN COLLECTION DATA TYPES
+
+...
+
+***
+
+lst = ["a", "b", "c", "d"]
+new_lst = lst[::-1] 
+return new_list  # ["d", "c", "b", "a"]
+This will return the list backwards, since we are slicing negatively. 
+
+
+
 
 # STRINGS
 
