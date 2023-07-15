@@ -12,6 +12,7 @@ A slice is an operator we can use on a collection data type:
 - Tuple
 
 It'll create a new tuple, list, or string as the sliced version.
+It creates a new object that contains the result of the slice.
 
 slice = [start : stop : step]
 ```
