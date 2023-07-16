@@ -837,6 +837,11 @@ x.get(4,0) + 1 is going to make a new key of 4 if one does not exist.
 You use a dictionary when you care about the presence of something.
 You also use a dictionary when you don't care about the order.
 
+
+In Python, trying to access a key that doesn't exist in a dictionary raises an exception.
+
+To avoid this, you should use the .get(key, default=None) method, which will return None if the key doesn't exist in the dictionary that the method is called on.
+
 Example:
 
 string = "hello world"
