@@ -754,6 +754,8 @@ else:
     print("didn't find it.")
     
  <hr>
+
+# Dictionaries
 In Python, a dictionary (or dict) is a collection that associates immutable keys
 with values of any type.
     The values do not need to be similar throughout the dict.
@@ -765,7 +767,7 @@ An unordered collection of key-value pairs.
 Dictionaries are really good for frequency counting.
 
 Dictionary BIG O calculations happen instantly. They are fast.
-
+```
 ages = {
     "Simon": 27",
     "Alex": 30
@@ -774,20 +776,21 @@ ages = {
 print("Alex is", ages["Alex"], "years old.")
 # will return: Alex is 30 years old.
 # The spaces are inherent considering the syntax is comma based.
-
+```
+```
 d = {}  # an empty dict
 d["key"] = "value"  # establishing a value to the key.
 print(d["key"])  # RETURNS: "value"
 
-If you try to add a value into a dictionary when the key already exists:
-    The key will stay the same but it's value will change.
+# If you try to add a value into a dictionary when the key already exists:
+    # The key will stay the same but it's value will change.
 d["key"] = "VALUES"
 print(d["key"])  # returns: "VALUES"
-
+```
 
 You will get a traceback error when trying to access a dictionary value
 that does not exist. KeyError:
-
+```
 x = dict()  # this will create and intiatlize a brand new, empty dictionary
 
 x = {
@@ -798,7 +801,7 @@ contains = 1 in x  # here we are checking if the key 1 exists, not the value
 return contains #  True
 
 x.keys()  # will return all the keys (1,2,3,4)
-
+```
 however, if you want to use something like x.keys(), you need to convert it to a list first.
 y = list(x.keys())
 
