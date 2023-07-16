@@ -753,7 +753,119 @@ while i < len(lst):
 else:
     print("didn't find it.")
     
- 
+ <hr>
+In Python, a dictionary (or dict) is a collection that associates immutable keys
+with values of any type.
+    The values do not need to be similar throughout the dict.
+    They can be differet with every key.
+For example, the following code creates and accesses a dictionary
+that stores the age of each person according to their names:
+
+An unordered collection of key-value pairs.
+Dictionaries are really good for frequency counting.
+
+Dictionary BIG O calculations happen instantly. They are fast.
+
+ages = {
+    "Simon": 27",
+    "Alex": 30
+}
+
+print("Alex is", ages["Alex"], "years old.")
+# will return: Alex is 30 years old.
+# The spaces are inherent considering the syntax is comma based.
+
+d = {}  # an empty dict
+d["key"] = "value"  # establishing a value to the key.
+print(d["key"])  # RETURNS: "value"
+
+If you try to add a value into a dictionary when the key already exists:
+    The key will stay the same but it's value will change.
+d["key"] = "VALUES"
+print(d["key"])  # returns: "VALUES"
+
+
+You will get a traceback error when trying to access a dictionary value
+that does not exist. KeyError:
+
+x = dict()  # this will create and intiatlize a brand new, empty dictionary
+
+x = {
+    1: 1, 2:2, 3:3
+}
+
+contains = 1 in x  # here we are checking if the key 1 exists, not the value
+return contains #  True
+
+x.keys()  # will return all the keys (1,2,3,4)
+
+however, if you want to use something like x.keys(), you need to convert it to a list first.
+y = list(x.keys())
+
+items = x.items()  # we get a list of tuples of all the keys and values together.
+items = list(x.items())
+
+## GETTING THE LENGTH OF A DICTIONARY
+print(len(x)) # will return the number of items. Each key + value are considered 1 item.
+
+## LOOPING THROUGH A DICTIONARY
+A dictionary is an unordered object.
+The items we insert into a dictionary doesn't mean the order will be maintained.
+
+- Cannot access indices.
+
+for key in x: #  will loop through by key.
+    value = x[key]
+    print(key, value)
+
+for key, value in x.items():
+    print(key, value)
+
+# both of the above will do the same thing.
+## .get method
+
+Access the key 4 and add 1 to it's value
+but what if there is no key 4?
+We want to add the key 4 and give it a value
+
+
+x[4] = x.get(4,0) + 1
+x[4] is trying to access the key 4
+x.get(4,0) + 1 is going to make a new key of 4 if one does not exist.
+# will return: {1:1, 2:2, 3:3, 4:4} (with an added 4)
+
+You use a dictionary when you care about the presence of something.
+You also use a dictionary when you don't care about the order.
+
+Example:
+
+string = "hello world"
+
+for char in string:
+    characters[char] = characters.get(char, 0) + 1
+
+# will return: {'h': 1, 'e': 1, 'l': 3, 'o': 2, ' ':1. 'w': 1, 'r':1, 'd': 1}
+    
+
+
+salaries = {
+    "Brad": 10,
+    "Lucy": 12,
+    "John": 6.5,
+}
+
+for name in salaries:
+    salary = salaries[name]
+    print(f"{name} makes ${salary} an hour")
+
+
+for name, salary in salaries.items():
+    weekly_salary = salary * 40
+    print(f"{name} makes ${weekly_salary} an week")
+
+
+
+ <hr>
 
 
 ### Tuple Methods
@@ -795,6 +907,11 @@ Traceback : means the program stopped. Something went wrong.
 IndexError: list index out of range: YOU are trying to access an index within a list that doesn't exist.
 ValueError: list.remove(x): x not in list
 
+
+
+NOTES:
+- If you're concerned with the presence or the frequency of items in a collection but don't care about their order, you should use a dictionary
+- If you're concerned with the order in which items are added to a collection and would like to modify these items, you should use a list
 
 
 
