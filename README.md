@@ -900,9 +900,12 @@ count()
 
 
 ### CS Resources
-https://github.com/mtdvio/every-programmer-should-know
-https://github.com/kdeldycke/awesome-falsehood
-https://roadmap.sh/computer-science
+- https://github.com/mtdvio/every-programmer-should-know
+- https://github.com/kdeldycke/awesome-falsehood
+- https://roadmap.sh/computer-science
+- https://github.com/ossu/computer-science
+- https://github.com/ForrestKnight/open-source-cs
+- https://github.com/PKUFlyingPig/Self-learning-Computer-Science
 
 
 
