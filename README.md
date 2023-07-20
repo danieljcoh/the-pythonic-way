@@ -872,6 +872,163 @@ for name, salary in salaries.items():
     print(f"{name} makes ${weekly_salary} an week")
 
 
+<hr>
+
+# Sets
+An unordered collection of unique elements.
+
+When you insert items into a set, the order is not maintained.
+No elements inside of a set can be duplicated within.
+If you want to see something exists, it's similar to a dict as it happens almost immediately. Much faster than a list.
+```
+y = {} # an empty set (but it makes a dictionary)
+# a set is represented by curly braces.
+# However, a dictionary is also denoted by {} 
+# So when we make an empty set we have to do it as so...
+x = set()
+
+# furthermore,
+
+y = {2,3} # this is no longer a dictionary. It's now a set. 
+#Because we put something inside the curly braces.
+```
+
+s = {1,1,1,2,2,2} will only return {1,2} because sets disregard
+elements that are duplicated
+
+### METHODS
+
+y = {1,2,2,1,1}
+y.add(3) this will add 3
+y.remove(2) will remove an element from the set
+y.clear() it will remove all elements from a set
+len(y) it will tell the length of the set
+
+- All data types can be mixed and matched inside a set.
+- You cannot add a list inside a set
+- But you can add tuples
+- Inside sets you can only add immutable objects.
+
+### Check if something exists inside a set
+```
+contains = 1 in y
+print(contains) prints True
+```
+
+### Combine sets together
+x = {1,2}
+y = {2,3}
+
+UNION: combine to sets together
+
+z = x.union(y)
+print(z) this will print {1,2,3} however this doesn't change x or y original variables.
+Another way to write this:
+Union Shortcut: z = x | y ... This will perform the union function the same way
+
+### Intersection of sets, items contained within both sets
+x = {1,2,3}
+y = {1,2,4}
+z = x.intersection(y) will return {1,2} because both sets share {1,2}
+Intersection shortcut: z = y & x
+
+### Difference of two sets, all the elements contained in one set but not in the other.
+x = {1,2,3}
+y = {1,2,4}
+z = x.difference(y) will return 3
+The order we call difference matters.
+z = y.difference(x) will return 4
+
+this is because {3} inside x is what y doesn't have
+and
+{4} insiIntersection shortcut: z = y & xde y is what x doesn't have
+Difference shortcut: z = y - x or z = x - y
+
+### Symmetric difference, gives you all elements that are not shared between the two sets
+x = {1,2,3}
+y = {1,2,4}
+z = x.symmetric_difference(y): will return {3,4}
+x = {1,2,3}
+y = {1,2,4,3}
+z = x.symmetric_difference(y): will return {4}
+
+difference only gives us the items in one set that aren't in the other
+symmetic_difference gives us the differences in both
+Symmetric difference shortcut: z = y ^ x
+
+### Update
+Update is a method that will completely update a new set
+x = {1,2,3}
+y = {1,2,4,3}
+x.update(y) - This will not update y but it WILL update x
+Will print out: x = {1,2,3,4}
+
+### .difference_update()
+x = {1,2,3}
+y = {1,2,4}
+x.difference_update(y)
+x will be equal to the difference between them x and y where x is the dominant set
+x = {3}
+y.difference_update(x) = {4}
+
+### symmetric_difference_update()
+x = {1,2,3}
+y = {1,2,4}
+y = symmetric_difference_update(x) will return {3,4}
+
+###Subset
+This set contains the same items as another set that has more items than itself.
+x = {1,2,3}
+y = {1,2,3,4}
+here x is a subset of y because even though y is a longer set, x still shares every item with y that x contains.
+
+x.issubset(y)) True
+Shortcut: x <= y True
+
+x = {1,2,3,8}
+y = {1,2,3,4}
+Here though x would not be a subset because ALL of x is not contained inside of y
+
+x.issubset(y)) False
+Shortcut: x <= y False
+
+###Superset
+This set contains all of the elements and MAYBE even more than the other set
+x = {1,2,3}
+y = {1,2,3,4}
+Here y is a superset of x because y contains everything that x contains.
+
+y.issuperset(x) True
+Shortcut: x >= y True
+
+###Set Theory (discrete math)
+- A proper super set / subset, means that the set we are talking about is not equal to the other set
+???
+
+### Convert List to set
+x = [1,2,2,2,3,4,5,3,4]
+set_x = set(x)
+print(set_x) will return: {1,2,3,4,5}
+
+- You can use it for strings too.
+
+### When to use Dictionary or Set
+Only use a set when you care about if something is in or not inside of a set
+If you just want to see if something exists, you don't care about the order or frequency, then you would use a set.
+
+
+
+sentence = (
+    "This is a regular sentence with words inside. Some words are unique within the sentence, "
+    + "while some are duplicates."
+)
+words_with_duplicates = sentence.split(" ")
+unique_words = set(words_with_duplicates)
+
+print(words_with_duplicates)
+print(unique_words)
+print(f"The sentence contains {len(unique_words)} unique words, but {len(words_with_duplicates)} words total.")
+
 
  <hr>
 
