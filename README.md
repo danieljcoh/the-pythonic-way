@@ -1075,6 +1075,153 @@ Traceback : means the program stopped. Something went wrong.
 IndexError: list index out of range: YOU are trying to access an index within a list that doesn't exist.
 ValueError: list.remove(x): x not in list
 
+# Exceptions
+An exception in python, is raised when something unexpected happens
+during the execution of your program.
+For example: If you try to convert "hello" to an integer.
+x = int("Hello") -- Will raise a "ValueError"
+
+However, we can anticipate when an error will be raised.
+If you do anticipate that a part of your code might, in some cases
+raise an exception, you can surround that part of the code
+with a try/except block and prevent your program from crashing.
+
+```
+digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+try:
+    if len(digits) != 10:
+        raise Exception("There should be exactly 10 digits!")
+except Exception as e:
+    print(e)
+finally:
+    print("Goodbye!")
+```
+
+```
+try:
+    int("hello")
+except:
+    print("Exception!")
+```
+
+This will print "Exception"
+
+You can also code for specific exceptions.
+- Heading Specific Exceptions
+
+```
+try:
+    int("hello")
+except ValueError as e:
+    #store the error as a variable
+    print("Exception!", e)
+```
+
+```
+try:
+    int("hello")
+except ZeroDivisionError as e:
+    #The value specific error will only print out "e" if it's the type of error we are looking for.
+    print("Exception!", e)
+```
+
+- We can also accept multiple different exceptions:
+```
+try:
+    x = 2/0
+except ZeroDivisionError as e:
+    print("Zero Div Exception!", e)
+except ValueError as e:
+    print("Val Exception!", e)
+```
+
+- If you don't know what exception you are looking for, you can accept a "general" exception type:
+```
+try:
+    x = 2/0
+except Exception as e:
+    print("General Exception!", e)
+```
+
+### Finally Block
+- Clean up operations
+- Finally block will always run no matter what
+```
+try:
+    x = 2/0
+except Exception as e:
+    print("General Exception!", e)
+finally:
+    print("Done")
+```
+- Even if an exception does NOT occur, the finally section will still run
+
+IndexError
+ValueError
+Zero Division Error
+Invalid Syntax
+
+### Raise our own errors
+```
+raise ValueError("This is an error!")
+
+```
+```
+raise Exception("This is an error!")
+
+```
+
+What's the point of raising our own errors?
+- We can also create our own exceptions and errors?
+    - How?
+
+```
+num = input("Enter a number: ")
+
+if not num.isdigit():
+    raise ValueError("this is not a valid number!")
+```
+
+```
+while True:
+    num = input("Enter a number: ")
+
+    try:
+        num = float(num)
+        break
+    except ValueError:
+        print("Not a valid float, try again.")
+```
+
+- Only when you know an error can occur should we use try/except blocks
+- And usually when you are expecting a specific error
+- Looking for general exceptions isn't a best practice in Python
+
+Runtime vs compile time Error:
+
+Compile Time: Refers to the time when the code will be converted into Bytecode
+- An error occurs before the computer can read the code.
+Byte Code: Interpreted and ran by computer
+
+Runetime error: A error that occurs while the code is executed.
+```
+num = input("Enter a float: ")
+num = float(num)
+# num = "hello"
+
+#The first line will run fine, but the second line will crash because the input can't be converted to a float.
+```
+
+Run time errors are harder to detect
+
+
+
+
+
+
+
+
 
 
 NOTES:
