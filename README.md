@@ -1234,6 +1234,87 @@ NOTES:
 
 
 
+# CLASSES
+
+### STATIC METHODS
+
+A static method is a method that sits inside of a class but does not 
+have access to the CLS or self key word.
+
+```
+class Student:
+    STATIC ATTRIBUTES / CLASS ATTRIBUTES
+    num_of_grades = 3
+    num_of_students = 20
+    grade_bump = 2.0
+
+    def __init__(self, name, grades=[]):
+        self.name = name
+        self.grades = grades
+
+    # INSTANCE METHOD
+    def average(self):
+        return sum(self.grades) / len(self.grades)
+
+    @classmethod
+    def average_from_grades_plus_bump(cls, grades):
+        average = cls.average_from_grades(grades)
+        return min(average + cls.grade_bump, 100)
+
+    @staticmethod
+    def average_from_grades(grades):
+        return sum(grades) / len(grades)
+
+s1 = Student("Dan", [80,75,90,99])
+
+How to call the static method:
+    print(s1.average_from_grades(s1.grades))
+```
+
+
+
+
+
+
+```
+import math
+
+
+class Geometry:
+    @staticmethod
+    def perimeter_of_square(side_length):
+        return 4 * side_length
+
+    @staticmethod
+    def area_of_square(side_length):
+        return side_length ** 2
+
+    @staticmethod
+    def perimeter_of_circle(radius):
+        return 2 * math.pi * radius
+
+    @staticmethod
+    def area_of_circle(radius):
+        return math.pi * (radius ** 2)
+
+
+print("Perimeter of square with side of length 7:", Geometry.perimeter_of_square(7))
+print("Area of square with side of length 7:", Geometry.area_of_square(7))
+
+print("Perimeter of circle with radius of length 3:", Geometry.perimeter_of_circle(3))
+print("Perimeter of circle with radius of length 3:", Geometry.area_of_circle(3))
+```
+
+
+
+
+
+
+
+
+
+
+
 
 
 
