@@ -1270,11 +1270,10 @@ s1 = Student("Dan", [80,75,90,99])
 How to call the static method:
     print(s1.average_from_grades(s1.grades))
 ```
+Static methods are denoted with the @staticmethod decorator and take no mandatory parameters. You can think of them as utility functions that are defined inside of a class. They have no access to instance attributes, class attributes or methods.
 
 
-
-
-
+Static methods can be thought of as utility functions that are defined inside of a class. They do not have any mandatory parameters and cannot access instance attributes, class attributes or methods. Static methods can be called from an instance or by using the class name directly.
 
 ```
 import math
